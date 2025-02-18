@@ -77,7 +77,7 @@ class Hibrido : public Perro, public Gato {
 };
 
 
-int main() {
+/*int main() {
     Perro * perro = new Perro("Pedro el perro", "Yorkshire");
     perro->sonido();
 
@@ -91,4 +91,4 @@ int main() {
     gato->mostrar();
     perro->mostrar();
     hibrido->mostrar();
-}
+}*/
