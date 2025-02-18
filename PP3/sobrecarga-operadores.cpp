@@ -14,7 +14,7 @@ public:
     }
 };
 
-int main() {
+/*int main() {
     Estudiante * e1 = new Estudiante("Juan");
     Estudiante * e2 = new Estudiante("Meli");
 
@@ -36,4 +36,4 @@ int main() {
     } else {
         cout <<"FALSO"<< endl;
     }
-}
+}*/
