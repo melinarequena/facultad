@@ -59,7 +59,7 @@ public:
     }
 };
 
-int main() {
+/*int main() {
     A a(1);
     B b(2);
     C c(3);
@@ -77,3 +77,4 @@ int main() {
 
     return 0;
 }
+*/

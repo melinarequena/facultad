@@ -4,4 +4,5 @@ project(facultad)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(facultad
-    PP3/herencia-multiple.cpp)
+    PP3/herencia-multiple.cpp
+        PP3/sobrecarga-operadores.cpp)
