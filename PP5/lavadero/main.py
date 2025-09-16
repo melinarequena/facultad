@@ -38,7 +38,6 @@ def main():
     print(auto.getNivel())
     print(SmallLav.lavarAuto(auto)) # La regla del costo esta mal
     print(auto.getNivel())
-
     bandadaW.atacar(auto)
 
     lavaderoBarato = buenosAires.lavaderoBarato()
