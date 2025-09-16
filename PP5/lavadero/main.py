@@ -1,6 +1,5 @@
 from bandada.bandada_enV import BandadaEnV
 from bandada.bandada_enW import BandadaEnW
-
 from aves.ave import Ave
 from aves.paloma import Paloma
 from aves.gaviota import Gaviota
@@ -19,6 +18,7 @@ def main():
 
     buenosAires = Ciudad('Buenos Aires')
 
+    # Deberia poder cambiar el tipo de bandada sin necesidad de instaniar una nueva clase
     bandadaV = BandadaEnV([gav1, gav2, paloma, cotorra, loro1, loro2])
     bandadaW = BandadaEnW([gav1, gav2, paloma, cotorra, loro1, loro2])
 
@@ -36,7 +36,9 @@ def main():
     bandadaV.atacar(auto)
     buenosAires.llover(100)
     print(auto.getNivel())
-    print(SmallLav.lavarAuto(auto))
+    print(SmallLav.lavarAuto(auto)) # La regla del costo esta mal
+    print(auto.getNivel())
+
     bandadaW.atacar(auto)
 
     lavaderoBarato = buenosAires.lavaderoBarato()

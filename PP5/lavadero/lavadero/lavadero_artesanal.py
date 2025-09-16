@@ -14,6 +14,7 @@ class LavaderoArtesanal(Lavadero):
         return self.cantPersonas * self.calcularTiempo(vehiculo) * self.costoPorMinuto
     
     def lavarAuto(self, vehiculo):
+        costo = self.calcularCosto(vehiculo)
         vehiculo.nivel = 0
-        return self.calcularCosto(vehiculo)
+        return costo
         
