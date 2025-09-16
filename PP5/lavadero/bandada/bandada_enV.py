@@ -7,4 +7,4 @@ class bandadaEnV(bandada):
     def atacar(self):
         for ave in self.bandada:
             ave.atacar()
-    pass
+    
