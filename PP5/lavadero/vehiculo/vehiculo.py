@@ -1,5 +1,5 @@
-from ciudad.ciudad import ciudad
-class vehiculo:
+from ciudad.ciudad import Ciudad
+class Vehiculo:
     def __init__(self, nom, mod, ciudad):
         self.nivel = 0
         self.nombre = nom

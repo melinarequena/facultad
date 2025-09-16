@@ -1,12 +1,11 @@
-from bandada import bandada
+from bandada.bandada import Bandada
 
-class bandadaEnW(bandada):
+class BandadaEnW(Bandada):
     def __init__(self, bandada):
         super().__init__(bandada)
 
-    def atacar(self):
+    def atacar(self, vehiculo):
         for ave in self.bandada:
-            ave.atacar()
+            ave.ensuciar(vehiculo)
         for ave in self.bandada:
-            ave.atacar()
-    pass
+            ave.ensuciar(vehiculo)

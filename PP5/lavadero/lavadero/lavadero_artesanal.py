@@ -1,8 +1,8 @@
-from lavadero import lavadero
+from lavadero.lavadero import Lavadero
 
-class lavaderoArtesanal(lavadero):
-    def __init__(self, nom, personas, costoPM):
-        super().__init__()
+class LavaderoArtesanal(Lavadero):
+    def __init__(self, ciud, nom, personas, costoPM):
+        super().__init__(ciud)
         self.nombre = nom
         self.cantPersonas = personas
         self.costoPorMinuto = costoPM
@@ -15,5 +15,5 @@ class lavaderoArtesanal(lavadero):
     
     def lavarAuto(self, vehiculo):
         vehiculo.nivel = 0
-        return self.calcularCosto(self, vehiculo)
+        return self.calcularCosto(vehiculo)
         

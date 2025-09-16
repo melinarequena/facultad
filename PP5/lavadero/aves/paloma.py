@@ -1,4 +1,4 @@
-from aves import Ave
+from aves.ave import Ave
 
 class Paloma(Ave):
     def __init__(self, nom, pes):
@@ -8,6 +8,7 @@ class Paloma(Ave):
     def ensuciar(self, vehiculo):
         vehiculo.nivel = vehiculo.nivel + self.peso * 0.3
         self.peso = self.peso - self.peso * 0.3
+        print(f"{self.nombre}: He ensuciado al vehiculo")
     
     
 
