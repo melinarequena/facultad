@@ -3,5 +3,5 @@ class Ave:
         self.nombre = nom
 
     def ensuciar(self, vehiculo):
-        vehiculo.nivel = vehiculo.nivel + 10
+        vehiculo.aumentarSuciedad(10)
         print(f"{self.nombre}: He ensuciado al vehiculo")

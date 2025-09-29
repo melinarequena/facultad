@@ -1,6 +1,6 @@
-from bandada import bandada
+from bandada import tipo_bandada
 
-class bandadaEnI(bandada):
+class bandadaEnI(tipo_bandada):
     def __init__(self, bandada):
         super().__init__(bandada)
 

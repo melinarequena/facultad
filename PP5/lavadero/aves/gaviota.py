@@ -6,5 +6,7 @@ class Gaviota(Ave):
         self.cantPecesComidos = cantPez
 
     def ensuciar(self, vehiculo):
-        vehiculo.nivel = vehiculo.nivel + self.cantPecesComidos * 3
+        cant = self.cantPecesComidos * 3
+        vehiculo.aumentarSuciedad(cant)
+        # vehiculo.nivel = vehiculo.nivel + self.cantPecesComidos * 3
         print(f"{self.nombre}: He ensuciado al vehiculo")
