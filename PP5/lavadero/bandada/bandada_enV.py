@@ -1,10 +1,10 @@
-from bandada.bandada import Bandada
+from bandada.tipo_bandada import TipoBandada
 
-class BandadaEnV(Bandada):
-    def __init__(self, bandada):
-        super().__init__(bandada)
+class BandadaEnV(TipoBandada):
+    def __init__(self):
+        super().__init__()
 
-    def atacar(self, vehiculo):
-        for ave in self.bandada:
+    def atacar(bandada, vehiculo):
+        for ave in bandada.bandada:
             ave.ensuciar(vehiculo)
     

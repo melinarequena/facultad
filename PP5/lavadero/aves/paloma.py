@@ -6,8 +6,9 @@ class Paloma(Ave):
         self.peso = pes
 
     def ensuciar(self, vehiculo):
-        vehiculo.nivel = vehiculo.nivel + self.peso * 0.3
-        self.peso = self.peso - self.peso * 0.3
+        cant = self.peso * 0.3
+        vehiculo.aumentarSuciedad(cant)
+        self.peso -= self.peso * 0.3
         print(f"{self.nombre}: He ensuciado al vehiculo")
     
     

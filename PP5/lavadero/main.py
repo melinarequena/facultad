@@ -6,12 +6,13 @@ from aves.gaviota import Gaviota
 from vehiculo.vehiculo import Vehiculo
 from lavadero.lavadero_artesanal import LavaderoArtesanal
 from ciudad.ciudad import Ciudad
+from bandada.bandada import Bandada
 
 
 def main():
     gav1 = Gaviota('Gaviota Pepe', 2)
     gav2 = Gaviota('Gaviota Marie', 3)
-    paloma = Paloma('Paloma Carlos', 20)
+    paloma = Paloma('Paloma Cacho', 20)
     cotorra = Ave('Cotorra Lucia')
     loro1 = Ave('Loro Pablo')
     loro2 = Ave('Loro Felipe')
@@ -19,9 +20,12 @@ def main():
     buenosAires = Ciudad('Buenos Aires')
 
     # Deberia poder cambiar el tipo de bandada sin necesidad de instaniar una nueva clase
-    bandadaV = BandadaEnV([gav1, gav2, paloma, cotorra, loro1, loro2])
-    bandadaW = BandadaEnW([gav1, gav2, paloma, cotorra, loro1, loro2])
+    bandadaV = BandadaEnV()
+    bandadaW = BandadaEnW()
 
+    # Instancio clase Ataque
+    bandada = Bandada(bandadaV, [gav1, gav2, paloma, cotorra, loro1, loro2])
+    bandada.cambiarEstrategia(bandadaW)
     auto = Vehiculo('Mi Auto', 'C4', buenosAires)
 
     SmallLav = LavaderoArtesanal(buenosAires,'SmallLav', 3, 20)

@@ -1,10 +1,10 @@
-from abc import ABC, abstractmethod
-
-class Bandada(ABC): # Abstract class
-    def __init__(self, aves):
-        # Lista de aves
+class Bandada:
+    def __init__(self, bandada: Bandada, aves):
+        self.tipo = bandada
         self.bandada = aves
-        
-    @abstractmethod
-    def atacar(self, vehiculo):
-        pass # Obliga a las hijas a implementarla
+
+    def cambiarEstrategia(self, bandada: Bandada): # Comnuta el tipo de bandada
+        self.tipo = bandada
+
+    def atacarAuto(self, vehiculo):
+        self.tipo.atacar(self, vehiculo)
